@@ -1,327 +1,582 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*07CB79*/
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    background: url("../img/rsz_1vinai.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
+body, html, h1 {
+    margin-top: 0;
 }
 
-#about {
+body, html {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+/*Navbar */
+#navbar {
+    background: #03A9F4;
     position: relative;
-    top: 550px;
-    left: 500px;
+    z-index: 999;
+}
+
+.logo p {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 5px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    float: right;
+    position: relative;
+}
+
+.navbar-collapse li {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+.navbar-collapse a {
+    color: white;
+}
+
+/*end section */
+
+/*front css */
+
+#front {
+    /*background: url(../img/john-wall.jpg) no-repeat scroll 0 0 / cover;*/
+    position: relative;
+    height: 100%;
+    background-position: center center;
+}
+
+.front-area-table {
+    display: table;
     width: 100%;
     height: 100%;
+}
+
+.front-area-tablecell {
     display: table-cell;
-    z-index: 2;
-}
-
-ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-/*Thanks to designhack.net for the inspiration for the hovering*/
-#links img {
-    opacity: 0.8;
-
-    /*Transition*/
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-
-    /*Reflection*/
-    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
-}
-
-
-#links img:hover {
-    opacity: 1;
-    /*Reflection*/
-    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
-
-    /*Glow*/
-    -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-}
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+.front-text {
+    position: relative;
+    text-align: center;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
+.front-text h1 {
+    position: relative;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.front-text span {
+    transform: translateX(-05%);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    align-items: center;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
+/* borrowed from Geoff Graham https://css-tricks.com/snippets/css/typewriter-effect/ */
+.typewriter h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 4.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
 
-.invisible {
+
+.icon-background {
+    color: #c0ffff;
+}
+
+/*end section */
+
+/*About */
+#about {
+    width: 100%
+}
+
+#about .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+
+#about p {
+    color: black;
+}
+
+
+#selfie img {
+    height: 250px;
+    width: 250px;
+    display: inline;
+}
+
+#selfie .text {
+    position: relative;
+    bottom: 35px;
+    left: 70px;
     visibility: hidden;
+    color: white
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+#selfie:hover .text {
+    visibility: visible;
 }
 
-.clearfix:after {
-    clear: both;
+.about-text p {
+    text-align: justify;
+    font-size: 16px;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.more-about-me {
+    text-align: center;
+    font-size: 16px;
+}
+.more-about-me.row {
+    text-align: center;
+    color: white;
+    background-color: transparent;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+
+
+.icon-background2 {
+    color: #03A9F4;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+.icon-background3 {
+    color: black;
+}
 
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+/*end*/
+
+/*Skills Section */
+
+#skills .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+#skills ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: center;
+}
+
+#skills li {
+    font-size: 16px;
+}
+
+#skills span {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#skills .card {
+    height: 220.5px;
+}
+
+.social {
+    position: relative;
+}
+
+.social-link {
+   align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.centerBlock {
+    display: table;
+    margin: auto;
+}
+.skills {
+    background-color: #EFE9F4;
+}
+
+.skills i {
+    font-size: 95px;
+}
+
+.social-link2 {
+    align-content: center;
+}
+
+.social-link2 i {
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+/* Experience Section*/
+#experience .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+.card.horizontal {
+    min-height: 243.5px;
+    max-height: 243.5px;
+}
+
+
+/* end */
+
+/* Project Section */
+#projects .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+#projects img {
+  min-height: 326.25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*07CB79*/
+
+body, html, h1 {
+    margin-top: 0;
+}
+
+body, html {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+/*Navbar */
+#navbar {
+    background: #03A9F4;
+    position: relative;
+    z-index: 999;
+}
+
+.logo p {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 5px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    float: right;
+    position: relative;
+}
+
+.navbar-collapse li {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+.navbar-collapse a {
+    color: white;
+}
+
+/*end section */
+
+/*front css */
+
+#front {
+    /*background: url(../img/john-wall.jpg) no-repeat scroll 0 0 / cover;*/
+    position: relative;
+    height: 100%;
+    background-position: center center;
+}
+
+.front-area-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.front-area-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.front-text {
+    position: relative;
+    text-align: center;
+}
+
+.front-text h1 {
+    position: relative;
+}
+
+.front-text span {
+    transform: translateX(-05%);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+
+/* borrowed from Geoff Graham https://css-tricks.com/snippets/css/typewriter-effect/ */
+.typewriter h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 4.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
     }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
+    to {
+        width: 100%
     }
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+
+
+.icon-background {
+    color: #c0ffff;
+}
+
+/*end section */
+
+/*About */
+#about {
+    width: 100%
+}
+
+#about .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+
+#about p {
+    color: black;
+}
+
+
+#selfie img {
+    height: 250px;
+    width: 250px;
+    display: inline;
+}
+
+#selfie .text {
+    position: relative;
+    bottom: 35px;
+    left: 70px;
+    visibility: hidden;
+    color: white
+}
+
+#selfie:hover .text {
+    visibility: visible;
+}
+
+.about-text p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.more-about-me {
+    text-align: center;
+    font-size: 16px;
+}
+.more-about-me.row {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+}
+
+
+
+.icon-background2 {
+    color: #03A9F4;
+}
+
+.icon-background3 {
+    color: black;
+}
+
+/*end*/
+
+/*Skills Section */
+
+#skills .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+#skills ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: center;
+}
+
+#skills li {
+    font-size: 16px;
+}
+
+#skills span {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#skills .card {
+    height: 220.5px;
+}
+
+.social {
+    position: relative;
+}
+
+.social-link {
+   align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.centerBlock {
+    display: table;
+    margin: auto;
+}
+.skills {
+    background-color: #EFE9F4;
+}
+
+.skills i {
+    font-size: 95px;
+}
+
+.social-link2 {
+    align-content: center;
+}
+
+.social-link2 i {
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+/* Experience Section*/
+#experience .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+.card.horizontal {
+    min-height: 243.5px;
+    max-height: 243.5px;
+}
+
+
+/* end */
+
+/* Project Section */
+#projects .title .row {
+    text-align: center;
+    background-color: #03A9F4;
+    color: white;
+}
+
+#projects img {
+  min-height: 326.25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

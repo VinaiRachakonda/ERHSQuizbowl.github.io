@@ -1,67 +1,388 @@
-<!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Vinai</title>
-    <meta name="description" content="Learn more about Vinai and the dope things hed does">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <title>Vinai Rachakonda</title>
+    <meta name="description" content="Learn more about Vinai and the dope things he does">
 </head>
-<body>
 
-<div id="container-fluid">
-        <div class = "row">
-            <div class = "col-md-4">
-                <div id="about">
-                    <div id="links">
-                        <ul>
-                            <li><a href="https://github.com/ERHSQuizbowl" target="_blank">
-                                <img src="../ERHSQuizbowl.github.io/img/GitHub-Mark-Light-64px.png">
-                            </a>
+<!--NAVBAR-->
+<body>
+<section id="navbar">
+    <div class="container-fluid">
+        <div class="col-md-2 col-sm-3">
+            <div class="logo">
+                <p> Vinai Rachakonda</p>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-9">
+            <div class="container-fluid">
+                <div class="navbar navbar-nobg">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#front">Home</a>
                             </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/vinaichandra-rachakonda-a41927117" target="_blank">
-                                    <img src="../ERHSQuizbowl.github.io/img/linkedin1.png">
-                                </a>
+                            <li><a href="#about">About</a>
                             </li>
-                            <li>
-                                <a href="mailto:rachakondavinai@gmail.com?Subject=Hey%20Vinai!" target="_top">
-                                    <img src="../ERHSQuizbowl.github.io/img/email-64.png">
-                                </a>
+                            <li><a href="#skills">Skills</a>
+                            </li>
+                            <li><a href="#experience">Experience</a>
+                            </li>
+                            <li><a href="#projects">Projects</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-</div>
+    </div>
+</section>
 
+<!--LANDING-->
+<section id="front">
+    <div class="front-area-table">
+        <div class="front-area-tablecell">
+            <div class="container-fluid bg-1 text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="front-text">
+                            <h1>Hi! I'm Vinai.</h1>
+                            <div class="typewriter">
+                                <h3>I like to code :-)</h3>
+                                <!--System.out.println idea?-->
+                            </div>
+                            <br>
+                            <span class="fa-stack fa-3x"> <a href="#about">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fa fa-level-down fa-stack-1x"></i></a>
+                            </span>
+                            </br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
-<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>-->
-<!--<script src="js/plugins.js"></script>-->
-<!--<script src="js/main.js"></script>-->
+<!--ABOUT-->
+<section id="about">
+    <div class="container-fluid">
+        <div class="title">
+            <div class="row">
+                <h4>About Me</h4>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <br>
+            <div id="selfie">
+                <img src="img/vcrop.jpg" class="img-responsive img-circle margin">
+                <p class="text">Damn I'm cute ;)</p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="section-header">
+                <h4> A little about me...</h4>
+            </div>
+            <div class="about-text">
+                <p> I am from Prince George's County, Maryland. I am currently a sophomore studying Computer and
+                    Information Science at the University of Pennsylvania.
+                    I started learning how to code when I was 16 and ever since I've been determined to learn more.
+                    My interests lie in robotics, AI, ML, cybersecurity, and algorithm theory. I also enjoy making
+                    webapps. I'm super interested in entrepreneurship and want launch my own complany ASAP.
+                    If you want to get in contact with me for some free-lance work or ask a question or two
+                    shoot me an email at <a
+                            href="mailto:rachakonda@gmail.com?Subject=Hello"> rachakondavinai@gmail.com. </a>
+                </p>
+            </div>
+            <div class="more-about-me">
+                <div class="row" style="background: none">
+                    <div class="col-md-4">
+                        <div class="centerBlock">
+                            <div class="col-md-2">
+                                <i class="fa fa-map-marker fa-4x" aria-hidden="true" style="color: black"></i>
+                            </div>
+                            <div class="col-md-2" style="color: black; margin-top: 20px; margin-left: 20px">
+                                <p>Philadelphia,PA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="col-md-8">
+                            <div class="centerBlock">
+                                <div class="social-link">
+                                <span class="fa-stack fa-2x">
+                                    <a href="https://www.linkedin.com/in/vinaichandra-rachakonda-a41927117/"
+                                       target="_blank">
+                                        <i class="fa fa-circle fa-stack-2x icon-background2"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x icon-background3"></i></a>
+                                </span>
+                                    <span class="fa-stack fa-2x">
+                                    <a href="https://github.com/ERHSQuizbowl" target="_blank">
+                                        <i class="fa fa-circle fa-stack-2x icon-background2"></i>
+                                        <i class="fa fa-github fa-stack-1x icon-background3"></i></a>
+                                </span>
+                                    <span class="fa-stack fa-2x"> <a
+                                            href="mailto:rachakonda@gmail.com?Subject=Hello">
+                                        <i class="fa fa-circle fa-stack-2x icon-background2"></i>
+                                        <i class="fa fa-envelope fa-stack-1x icon-background3"></i></a>
+                                </span>
+                                </div>
+                            </div>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-    (function (b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function () {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = 'https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X', 'auto');
-    ga('send', 'pageview');
-</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container-fluid">
+        <div class="title">
+            <div class="row">
+                <h4>Skills</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card grey lighten-4">
+                    <div class="card-content black-text">
+                        <span class="card-title">What I Know</span>
+                        <ul>
+                            <li> Java </li>
+                            <li> AngularJS </li>
+                            <li> OCaml </li>
+                            <li> Python </li>
+                            <li> C++ </li>
+                            <li> Arduino C </li>
+                            <li> JQuery </li>
+                            <li> HTML </li>
+                            <li> CSS3 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card grey lighten-4">
+                    <div class="card-content black-text">
+                        <span class="card-title">What I'm Learning</span>
+                        <ul>
+                            <li> GoLang </li>
+                            <li> VueJS </li>
+                            <li> React Native </li>
+                            <li> Graphic Design </li>
+                            <li> AI Concepts </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card grey lighten-4">
+                    <div class="card-content black-text">
+                        <span class="card-title">What I Want to Learn</span>
+                        <ul>
+                            <li> Cryptography </li>
+                            <li> ReactJS </li>
+                            <li> Data Analytics </li>
+                            <li> Painting </li>
+                            <li> Randomized Algorithms </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<!--EXPERIENCE-->
+<section id="experience">
+    <div class="container-fluid">
+        <div class="title">
+            <div class="row">
+                <h4>Work Experience</h4>
+            </div>
+        </div>
+        <div class="workCards">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="col s14 m8">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="img/contrast.png">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>I am currently a software engineering intern at Contrast Security, a
+                                        cybersecurity startup. I do all sorts
+                                        of nifty things including Alexa hacks, employee hackathons and barbecuing. I
+                                        am
+                                        currently
+                                        developing IAST and RASP applications for Python and GoLang. </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://www.contrastsecurity.com/" target="_blank">Contrast
+                                        Security</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col s14 m8">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="img/penn2.png">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>I am a teaching assistant at the University of Pennsylvania. Currently I TA
+                                        CIS
+                                        160,
+                                        a discrete mathematics course. Previously I TAed CIS 120 which is Penn's
+                                        second level programming course. I am comfortable teaching recitations as
+                                        well
+                                        as
+                                        working with students in office hours. </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://www.seas.upenn.edu/~cis160/current/" target="_blank">CIS
+                                        160</a>
+                                    <a href="https://www.seas.upenn.edu/~cis120/current/" target="_blank">CIS
+                                        120</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="col s14 m8">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="img/pennlabs.png">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>I am currently a web-app developer for Pennlabs. I work on applications
+                                        useful
+                                        for Penn students including PennCourseReview and EventsAtPenn. New
+                                        projects
+                                        are on
+                                        the way so stay in touch!</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="http://pennlabs.org/" target="_blank">Pennlabs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col s14 m8">
+                        <div class="card horizontal" style="max-height: 243.5px">
+                            <div class="card-image">
+                                <img src="img/umd.gif">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>I was a high school researcher at the Robotics Realization Lab at
+                                        the University of Maryland.I did research on developing robotic automation
+                                        solutions in the assistive healthcare field. I also became a co-author on a
+                                        paper accepted by the
+                                        <a href="http://ieeexplore.ieee.org/document/7743478/">2016 IEEE CASE
+                                            conference. </a>
+                                        Click on the link below to see some of my work in action!
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://www.youtube.com/watch?v=xeMrp16B9Y0&t=2s" target="_blank">Compliant
+                                        Object Cleaning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <div class="container-fluid">
+        <div class="title">
+            <div class="row">
+                <h4>Projects</h4>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="card grey lighten-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/robot.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Automated Robot Bed Bathing<i
+                                class="material-icons right">(click)</i></span>
+                        <p><a href="https://github.com/ERHSQuizbowl/Automated-Robot-Bed-Bathing">View Project on
+                            Github</a> --
+                        <a href="https://www.youtube.com/watch?v=xeMrp16B9Y0&t=2s"> Compliant Object Cleaning</a></p>
+
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Automated Robot Bed Bathing
+                            <i class="material-icons right">close</i></span>
+                        <p>The central idea of this project was "How can we use robotics to automate nursing tasks?"
+                            The idea of automating bathing of elderly and disabled patients was suggested by mentor.
+                            Basically I could draw a stain on the mannequin, which the Kinect would detect. I would then
+                            compute a cleaning plan for the robot to execute. I programmed the Kinect in C++,
+                            manipulating its
+                            pointclouds with PCL and OpenCV. The robot was programmed in Java. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card grey lighten-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/rsz_1vinai.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">This Website!<i
+                                class="material-icons right">(click)</i></span>
+                        <p><a href="https://github.com/ERHSQuizbowl/ERHSQuizbowl.github.io">View Project on
+                            Github</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Automated Robot Bed Bathing
+                            <i class="material-icons right">close</i></span>
+                        <p>This is the second iteration of my website. The picture for this card was the background picture
+                            for the first. I see this website as a vehicle for me to experiment with design, something I've
+                        been trying to work on. Building this has definitely developed my understanding of CSS. Looking to
+                        improve the website in its 3rd iteration. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 </body>
 </html>
